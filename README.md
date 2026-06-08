@@ -1,4 +1,3 @@
-
  ###########################################################################################
  #Une application de gestion de stock ou inventaire avec python et xml comme base de donnée#
  ###########################################################################################
@@ -11,7 +10,6 @@ I)Structure du projet:
 |-dataProduit.xml(ici les donnée produit sont  stocke)
 |-fournisseurSchema.xsd
 |-produitSchema.xsd
- *env (l'environement virtuelle)
  *icone (les icone utiliser dans le projet)
  |-gui_support.py (logique du projet)
  |-gui.py (view du projet ou interface utilisateur)
@@ -26,33 +24,22 @@ votre python.
 
 III)Pour démarer l'application il faut suivre attentivement ces étape ci-dessous:
 
- Etape 1- ouvrire le CMD de windows (tapezsur le bouton demarer + R -> tapez CMD -> tapez executer ou entrer)
+Etape 0- ouvrire le CMD de windows (tapez sur le bouton demarer + R -> tapez CMD -> tapez executer ou entrer) et navigé vers le projet
 
- Etape 2- navigé vers le projet et activée l'environement virtuelle:
+#########################
+#Etapes 1               #
+#########################
 
-     Faire c'est commande étape par étape dans le cmd (et apres chaque commande il faut appuyer sur le bouton Entre):
-     1) d:
-     2) cd Examen_xml (se deplace dans le projet)
-     3) env\Scripts\activate (activation de l'environement virtuelle)
+Il faut installer les dépendance qui se trouve dans le fichier requirements.txt 
+Il faut avoire une connexion stable: et activée l'environement virtuelle et lance cette commande : "pip install -r requirements.txt"
+Sa va télècharger les dépendance néccesaire pour bien fonctionner le projet.
+exemple:
+pip install -r requirements.txt
 
- Etape 3- Une fois l'environement virtuelle lance vous aurais : (env) D:\Examen_xml> si vous n'arais pas cette resulat re faire l'étape 2
+Et attendre que le télèchargement se finisent bien 
 
- Etape 4- lance le projet avec la commande selon la version de votre python:
+Etape 2- lance le projet avec la commande selon la version de votre python:
 
        python gui_support.py 
                 ou
        python3 gui_support.py
-
- Etape 5: Attendre un instant que le projet démarer , sinon  veuiller refaire les étapes de 1 à 5 ou bien  lire le Remarque au ci-dessous!.
-
-#########################
-#Remarque trés important#
-#########################
-
-Si le projet demarer mais rien ne fonctionner vous donc il faut installer les dépendance qui se trouve dans le fichier requirements.txt 
-Il faut avoire une connexion stable: et activée l'environement virtuelle et lance cette commande : "pip install -r requirements.txt"
-Sa va télècharger les dépendance néccesaire pour bien fonctionner le projet.
-exemple:
--(env) D:\Examen_xml> pip install -r requirements.txt
-
-Et attendre que le télèchargement se finisent bien et relance le projet ou refaire les 5 étapes pour démarer l'application.
