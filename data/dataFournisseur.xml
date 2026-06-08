@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="fournisseurSchema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<fournisseurs>
+    <fournisseur id_fournisseur="1">
+        <nom_fournisseur>Shope Liantso</nom_fournisseur>
+        <adresse>Toamasina Oximade</adresse>
+        <télèphone>+261 38 12 345 67</télèphone>
+        <email>shopeliantsoa@gmail.com</email>
+        <date>2025-01-01</date>
+    </fournisseur>
+    <fournisseur id_fournisseur="2">
+        <nom_fournisseur>Inovatic</nom_fournisseur>
+        <adresse>Toamasina</adresse>
+        <télèphone>+261 38 18 980 78</télèphone>
+        <email>inovatic@gmail.com</email>
+        <date>2025-01-01</date>
+    </fournisseur>
+    <fournisseur id_fournisseur="3">
+        <nom_fournisseur>Shope magic</nom_fournisseur>
+        <adresse>Antananarivo</adresse>
+        <télèphone>+261 38 22 232 12</télèphone>
+        <email>shopemagic@gmail.com</email>
+        <date>2025-01-01</date>
+    </fournisseur>
+    <fournisseur id_fournisseur="4">
+        <nom_fournisseur>Star</nom_fournisseur>
+        <adresse>Antananarivo</adresse>
+        <télèphone>+261 38 17 832 02</télèphone>
+        <email>star@gmail.com</email>
+        <date>2025-01-01</date>
+    </fournisseur>
+</fournisseurs>

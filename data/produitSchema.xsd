@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="produits"><!-- racine-->
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="produit"  minOccurs="0" maxOccurs="unbounded"><!--contient  1 ou n : produit-->
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="date_ajoute" type="xs:string"/><!-- un produit a un date d'ajoute -->
+                            <xs:element name="date_modification" type="xs:string"/><!-- un produit date de mise a jours-->
+                            <xs:element name="nom" type="xs:string"/><!-- un produit a un nom-->
+                            <xs:element name="catégorie" type="xs:string"/><!-- un produit a un catégorie-->
+                            <xs:element name="quantite" type="xs:integer"/><!-- un produit a un stock ou quantite-->
+                            <xs:element name="prix" type="xs:integer"/><!-- un produit a un prix unitaire-->
+                            <xs:element name="fournisseur" type="xs:string"/><!-- un produit a un fournisseur-->
+                            <xs:element name="mouvement"  minOccurs="0" maxOccurs="unbounded"><!--un produit peut avoir 0 a n mouvment-->
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:integer"><!--un mouvment stok (soit entre (+),sortant (-))-->
+                                        <xs:attribute name="type" type="xs:string" use="required"/><!-- un mouvement posseder un type(Entre ou Sortie) qui est obligatoire-->
+                                        <xs:attribute name="date" type="xs:string" use="required"/><!-- un mouvement posseder une  date qui est obligatoire-->
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    <xs:attribute name="id_produit" type="xs:integer" use="required"/><!-- un produit posseder un id qui est obligatoire-->
+                    </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+    </xs:element>
+</xs:schema>

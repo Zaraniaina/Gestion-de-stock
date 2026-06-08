@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fournisseurs"><!-- racine-->
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fournisseur" minOccurs="0" maxOccurs="unbounded"><!--contient  1 ou n : fournisseur-->
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom_fournisseur" type="xs:string"/><!-- un produit date de mise a jours-->
+                            <xs:element name="adresse" type="xs:string"/><!-- n fournisseur a un nom-->
+                            <xs:element name="télèphone" type="xs:string"/><!-- n fournisseur a un catégorie-->
+                            <xs:element name="email" type="xs:string"/><!-- n fournisseur a un stock ou quantite-->
+                            <xs:element name="date" type="xs:string"/><!-- n fournisseur a un prix unitaire-->
+                        </xs:sequence>
+                        <xs:attribute name="id_fournisseur" type="xs:integer" use="required"/><!-- un fournisseur posseder un id qui est obligatoire-->
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
